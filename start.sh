@@ -1,4 +1,4 @@
-python3 -m http.server 10000 &
+python3 webserver.py &
 if [[ -n $RCLONE_CONFIG ]]; then
 	echo "Rclone config detected"
 	echo -e "$RCLONE_CONFIG" > /app/rclone.conf
